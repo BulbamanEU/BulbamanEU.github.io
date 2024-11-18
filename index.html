@@ -1,65 +1,81 @@
-<!-- Gintas Kukliauskas 20232420 -->
 <!DOCTYPE html>
-<body>
-    <h1>Heading 1</h1>
-        <p> Some text which should be displayed in the website.</p>
-        <p><i>Italic text</i></p>
-        <p><cite>Quote</cite></p>
-    <h2>Heading 2</h2>
-        <ul>
-            <li>item1</li>
-            <li>item2</li>
-                <ol></ol>
-        </ul>
+<html lang="lt">
 
-    <h4>Heading 4</h4>
-        <a href="https://www.youtube.com/watch?v=cOVdKlS5gQQ&t=32s&ab_channel=ArchitectureTopics" target="_blank">Link</a>
-    <h5>Heading 5</h5>
-        <a href="https://vm.tiktok.com/ZGd8suJtC/" target="_blank">
-            <img src="https://media.discordapp.net/attachments/1141877900249923604/1152810097303638086/il_794xN.5000581745_ioi3.gif?ex=67244c91&is=6722fb11&hm=bab85cb462571639d32f422356baeaaaeae0d90de75b15bf4c49a40ab4e69ac6&" 
-            width="250px" height="250px"/>
-        </a>
+<head>
+    <title>Personal Website</title>
 
-        <p>Table</p>
-        <table border="1">
-            <tr>
-                <th>title 1</th>
-                <th>title 2</th>
-                <th>title 3</th>
-                <th>title 4</th>
-            </tr>
-            <tr>
-                <td>item 1</td>
-                <td>item 2</td>
-                <td>item 3</td>
-                <td>item 4</td>
-            </tr>
-            <tr>
-                <td>item 1</td>
-                <td colspan="2">item 2</td>
-                <td>item 3</td>
-            </tr>
-            <tr>
-                <td>extra</td>
-                <td colspan="2">extra-item 2</td>
-                <td>extra item</td>
-            </tr>
-        </table>
-    <h6>Heading 6</h6>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Gintas">
+
     <style>
-        .zoom {
-          padding: 50px;
-          background-color: green;
-          transition: transform .2s; /* Animation /
-          width: 200px;
-          height: 200px;
-          margin: 0 auto;
+
+        .sitename {
+            font-family: 'Arial', sans-serif; /* Font family for the text */
+            font-size: 36px; /* Size of the text */
+            font-weight: bold; /* Makes the text bold */
+            color: #333; /* Text color */
+            letter-spacing: 2px; /* Adds spacing between letters */
+            text-transform: uppercase; /* Makes the text uppercase */
+            margin: 0; /* Removes any default margin */ 
         }
         
-        .zoom:hover {
-          transform: scale(1.5); / (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+        .navmenu ul {
+            list-style-type: none; /* Removes bullet points */
+            padding: 0; /* Removes default padding */
+            margin: 0; /* Removes default margin */
+            display: flex; /* This makes the list items appear in a row */
         }
-        </style>
-        
-        <div class="zoom"></div>
+
+        .navmenu li {
+            margin-right: 50px; /* Space between the list items */
+        }
+
+        .navmenu a {
+            text-decoration: none; /* Removes underline from links */
+            color: black; /* Sets link color */
+            font-weight: bold; /* Optional: makes the text bold */
+        }
+
+        .navmenu a.active {
+            color: #007bff; /* Changes color for active link (optional) */
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <header id="header" class="header flex">
+        <div class="">
+            <a href="index.html" class="logo flex">
+                <!-- <img src="" alt=""> -->
+                <h1 class="sitename">Personal</h1>
+            </a>
+            <nav id="navmenu" class="navmenu">
+                <ul>
+                    <li>
+                        <a href="index.html" class="active">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="resume.html">Resume</a>
+                    </li>
+                    <li>
+                        <a href="portfolio.html">Portfolio</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div id="preview">
+        <iframe id="preview-frame" class="prieview-desktop" src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fcoleandmarmalade.com%2F2021%2F10%2F22%2Fmanny-the-selfie-cat-and-his-selfiecat-security%2F&psig=AOvVaw11EAv4kLpLBR3Xxu5pkvhm&ust=1732005802229000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCJCorb2-5YkDFQAAAAAdAAAAABAQ" frameborder=0>
+
+        </iframe>
+    </div>
 </body>
+</html>
