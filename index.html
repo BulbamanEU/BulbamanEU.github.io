@@ -1,65 +1,88 @@
-<!-- Gintas Kukliauskas 20232420 -->
 <!DOCTYPE html>
-<body>
-    <h1>Heading 1</h1>
-        <p> Some text which should be displayed in the website.</p>
-        <p><i>Italic text</i></p>
-        <p><cite>Quote</cite></p>
-    <h2>Heading 2</h2>
-        <ul>
-            <li>item1</li>
-            <li>item2</li>
-                <ol></ol>
-        </ul>
+<html lang="lt">
 
-    <h4>Heading 4</h4>
-        <a href="https://www.youtube.com/watch?v=cOVdKlS5gQQ&t=32s&ab_channel=ArchitectureTopics" target="_blank">Link</a>
-    <h5>Heading 5</h5>
-        <a href="https://vm.tiktok.com/ZGd8suJtC/" target="_blank">
-            <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.lovemeow.com%2Fmanny-the-cat-takes-selfies-for-him-and-his-dogs-with-a-gopro-camera-1608526665.html&psig=AOvVaw1gqOvYgynoviHQnMoG63Kw&ust=1731400472276000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCMjd3Lnv04kDFQAAAAAdAAAAABAE" 
-            width="250px" height="250px"/>
-        </a>
+<head>
+    <title>Personal Website</title>
 
-        <p>Table</p>
-        <table border="1">
-            <tr>
-                <th>title 1</th>
-                <th>title 2</th>
-                <th>title 3</th>
-                <th>title 4</th>
-            </tr>
-            <tr>
-                <td>item 1</td>
-                <td>item 2</td>
-                <td>item 3</td>
-                <td>item 4</td>
-            </tr>
-            <tr>
-                <td>item 1</td>
-                <td colspan="2">item 2</td>
-                <td>item 3</td>
-            </tr>
-            <tr>
-                <td>extra</td>
-                <td colspan="2">extra-item 2</td>
-                <td>extra item</td>
-            </tr>
-        </table>
-    <h6>Heading 6</h6>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Gintas">
+
+    <!--
     <style>
-        .zoom {
-          padding: 50px;
-          background-color: green;
-          transition: transform .2s; /* Animation /
-          width: 200px;
-          height: 200px;
-          margin: 0 auto;
+
+        .sitename {
+            font-family: 'Arial', sans-serif;
+            font-size: 36px;
+            font-weight: bold;
+            color: #333;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin: 0;
         }
         
-        .zoom:hover {
-          transform: scale(1.5); / (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+        .navmenu ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
         }
-        </style>
-        
-        <div class="zoom"></div>
+
+        .navmenu li {
+            margin-right: 50px;
+        }
+
+        .navmenu a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        .navmenu a.active {
+            color: #007bff;
+        }
+
+    </style>
+-->
+</head>
+
+<body>
+    <div id="preview">
+        <main class="main">
+            <section id="hero">
+                <h2>Personal</h2>
+                <img src="images/cat_paris.jpg" alt="Cat in Paris" width="600" height="400">
+            </section>
+            <section id="about">
+                <h2>About</h2>
+                <p>Katytė su šuniukais</p>
+                <img src="images/cat_selfie01.jpg" alt="Cat image" width="300" height="300">
+            </section>
+            <section id="resume">
+                <h2>Resume</h2>
+            </section>
+            <section id="portfolio">
+                <h2>Portfolio</h2>
+            </section>
+            <section id="services">
+                <h2>Services</h2>
+                <h4>My video</h4>
+                <video></video>
+
+                <h4>Youtube Video</h4>
+                <iframe width="560" height="315"
+                    src="https://www.youtube.com/embed/adD3LOvMvm4?si=LziJUso_sjQOIHNM"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen></iframe>
+
+                <h4>My audio</h4>
+                <audio></audio>
+            </section>
+        </main>
+    </div>
 </body>
+</html>
