@@ -9,73 +9,80 @@
     <meta name="description" content="">
     <meta name="author" content="Gintas">
 
+    <!--
     <style>
 
         .sitename {
-            font-family: 'Arial', sans-serif; /* Font family for the text */
-            font-size: 36px; /* Size of the text */
-            font-weight: bold; /* Makes the text bold */
-            color: #333; /* Text color */
-            letter-spacing: 2px; /* Adds spacing between letters */
-            text-transform: uppercase; /* Makes the text uppercase */
-            margin: 0; /* Removes any default margin */ 
+            font-family: 'Arial', sans-serif;
+            font-size: 36px;
+            font-weight: bold;
+            color: #333;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin: 0;
         }
         
         .navmenu ul {
-            list-style-type: none; /* Removes bullet points */
-            padding: 0; /* Removes default padding */
-            margin: 0; /* Removes default margin */
-            display: flex; /* This makes the list items appear in a row */
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
         }
 
         .navmenu li {
-            margin-right: 50px; /* Space between the list items */
+            margin-right: 50px;
         }
 
         .navmenu a {
-            text-decoration: none; /* Removes underline from links */
-            color: black; /* Sets link color */
-            font-weight: bold; /* Optional: makes the text bold */
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
         }
 
         .navmenu a.active {
-            color: #007bff; /* Changes color for active link (optional) */
+            color: #007bff;
         }
 
     </style>
-
+-->
 </head>
 
 <body>
-    <header id="header" class="header flex">
-        <div class="">
-            <a href="index.html" class="logo flex">
-                <!-- <img src="" alt=""> -->
-                <h1 class="sitename">Personal</h1>
-            </a>
-            <nav id="navmenu" class="navmenu">
-                <ul>
-                    <li>
-                        <a href="index.html" class="active">Home</a>
-                    </li>
-                    <li>
-                        <a href="about.html">About</a>
-                    </li>
-                    <li>
-                        <a href="resume.html">Resume</a>
-                    </li>
-                    <li>
-                        <a href="portfolio.html">Portfolio</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
     <div id="preview">
-        <iframe id="preview-frame" class="prieview-desktop" src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fcoleandmarmalade.com%2F2021%2F10%2F22%2Fmanny-the-selfie-cat-and-his-selfiecat-security%2F&psig=AOvVaw11EAv4kLpLBR3Xxu5pkvhm&ust=1732005802229000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCJCorb2-5YkDFQAAAAAdAAAAABAQ" frameborder=0>
+        <main class="main">
+            <section id="hero">
+                <h2>Personal</h2>
+                <img src="images/cat_paris.jpg" alt="Cat in Paris" width="600" height="400">
+            </section>
+            <section id="about">
+                <h2>About</h2>
+                <p>Katytė su šuniukais</p>
+                <img src="images/cat_selfie01.jpg" alt="Cat image" width="300" height="300">
+            </section>
+            <section id="resume">
+                <h2>Resume</h2>
+            </section>
+            <section id="portfolio">
+                <h2>Portfolio</h2>
+            </section>
+            <section id="services">
+                <h2>Services</h2>
+                <h4>My video</h4>
+                <video></video>
 
-        </iframe>
+                <h4>Youtube Video</h4>
+                <iframe width="560" height="315"
+                    src="https://www.youtube.com/embed/adD3LOvMvm4?si=LziJUso_sjQOIHNM"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen></iframe>
+
+                <h4>My audio</h4>
+                <audio></audio>
+            </section>
+        </main>
     </div>
 </body>
 </html>
