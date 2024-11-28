@@ -1,0 +1,57 @@
+.center-section{
+    text-align: center;
+}
+
+.about-text{
+    margin: auto;
+    width: 700px;
+    padding: 20px;
+}
+
+.cur-container {
+    background-color: antiquewhite;
+    padding: 8px;
+}
+
+.cur-container p {
+    margin-left: 100px;
+}
+
+
+.about-me {
+    font-family:'Courier New', Courier, monospace;
+    margin: 20px;
+    padding: 20px;
+
+}
+
+.about-me .header {
+    text-align: center;
+    margin: 20px;
+}
+
+.about-me .info {
+    display: flex;           /* Flexbox to align columns side by side */
+    gap: 100px;               /* Space between columns */
+}
+
+.about-me .info p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.about-me .column {
+    display: flex;
+    flex-direction: column;  /* Stack text vertically in each column */
+}
+
+.image {
+    width: 300px;
+    height: 300px;
+}
+
+.profile {
+    display: flex; 
+    align-items: center;
+    gap: 20px;
+}

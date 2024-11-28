@@ -1,0 +1,42 @@
+body {
+    background-image: url('images/cat_paris.jpg'); /* Path to your image */
+    background-size: cover; /* Ensure the image covers the whole page */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repeating the image */
+    margin: 0; /* Remove default body margin */
+    height: 100vh; /* Make sure the background covers the entire viewport */
+}
+
+.hero {
+    display: flex;
+    justify-content: flex-start; /* Aligns content from the left side */
+    align-items: center; /* Centers vertically */
+    height: 100vh; /* Full viewport height */
+    padding-left: 10%; /* Moves the content slightly to the right */
+    padding-right: 10%; /* Optional, to balance space on both sides */
+    color: rgb(255, 255, 255);
+}
+
+
+.container {
+    text-align: left; /* Align text to the left within the container */
+}
+
+h2 {
+    font-size: 3rem; /* Customize the size of the heading */
+    margin-bottom: 10px; /* Optional, for spacing */
+}
+
+p {
+    font-size: 1.5rem; /* Customize the size of the paragraph */
+}
+
+.social-links {
+    margin-top: 20px; /* Optional, for spacing */
+}
+
+.social-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.5rem;
+}

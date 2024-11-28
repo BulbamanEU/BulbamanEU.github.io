@@ -1,88 +1,78 @@
 <!DOCTYPE html>
+
 <html lang="lt">
 
-<head>
-    <title>Personal Website</title>
+    <head>
+        <title>Personal Website</title>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="Gintas">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="Gintas">
 
-    <!--
-    <style>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="home_style.css">
 
-        .sitename {
-            font-family: 'Arial', sans-serif;
-            font-size: 36px;
-            font-weight: bold;
-            color: #333;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            margin: 0;
-        }
-        
-        .navmenu ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-        }
 
-        .navmenu li {
-            margin-right: 50px;
-        }
+    </head>
 
-        .navmenu a {
-            text-decoration: none;
-            color: black;
-            font-weight: bold;
-        }
-
-        .navmenu a.active {
-            color: #007bff;
-        }
-
-    </style>
--->
-</head>
-
-<body>
-    <div id="preview">
-        <main class="main">
-            <section id="hero">
-                <h2>Personal</h2>
-                <img src="images/cat_paris.jpg" alt="Cat in Paris" width="600" height="400">
+    <body>
+        <header id="header" class="header flex">
+            <div class="header-container">
+                <a href="index.html" class="logo flex">
+                   <h1 class="sitename">Personal</h1>
+                </a>
+                <nav id="navmenu" class="navmenu">
+                   <ul>
+                       <li>
+                           <a href="index.html" class="active underline">Home</a>
+                       </li>
+                       <li>
+                           <a href="about.html">About</a>
+                       </li>
+                       <li>
+                           <a href="resume.html">Resume</a>
+                       </li>
+                       <li>
+                           <a href="portfolio.html">Portfolio</a>
+                       </li>
+                       <li>
+                            <a href="services.html">Services</a>
+                       </li>
+                   </ul>
+                </nav>
+            </div>
+        </header>
+        <body>
+            <section id="hero" class="hero section">
+                <div class="container">
+                    <h2>Gintas</h2>
+                    <p>
+                        I'm volleyball coach
+                        <!--
+                        <span class="typed" data-typed-items="Developer, Photographer,
+                         Influencer, Table Tennis player,
+                          Volleyball champion, Basketball coach,
+                           Football atacker, Soccer forward">
+                        </span>
+                        <span class="typed-cursor" aria-hidden="true"></span>
+                        <span class="typed-cursor typed-cursor--blink"></span>
+                        -->
+                    </p>
+                    <div class="social-links">
+                        <a href="#">
+                            <i class="bi bi-twitter-x">
+                                ::before
+                            </i>
+                        </a>
+                    </div>
+                </div>
             </section>
-            <section id="about">
-                <h2>About</h2>
-                <p>Katytė su šuniukais</p>
-                <img src="images/cat_selfie01.jpg" alt="Cat image" width="300" height="300">
-            </section>
-            <section id="resume">
-                <h2>Resume</h2>
-            </section>
-            <section id="portfolio">
-                <h2>Portfolio</h2>
-            </section>
-            <section id="services">
-                <h2>Services</h2>
-                <h4>My video</h4>
-                <video></video>
+        </body>
 
-                <h4>Youtube Video</h4>
-                <iframe width="560" height="315"
-                    src="https://www.youtube.com/embed/adD3LOvMvm4?si=LziJUso_sjQOIHNM"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen></iframe>
+        <div id="preview">
+            
+        </div>
+    </body>
 
-                <h4>My audio</h4>
-                <audio></audio>
-            </section>
-        </main>
-    </div>
-</body>
 </html>
