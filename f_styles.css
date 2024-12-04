@@ -1,0 +1,39 @@
+footer {
+    text-align: center; /* Center the text in the footer */
+    padding: 0px 30px 100px; /* Add some padding to the footer */
+    background-color: #ffffff; /* Optional: Add a background color */
+}
+
+footer .sitename {
+    font-size: 2rem; /* Optional: Adjust font size of the sitename */
+    margin-bottom: 10px; /* Optional: Add some space below the sitename */
+}
+
+footer p {
+    margin-bottom: 20px; /* Optional: Add space below the paragraph */
+}
+
+footer .social-links {
+    justify-content: center; /* Center the social icons horizontally */
+    display: flex; /* Make sure the social links are displayed as a flex container */
+    gap: 10px; /* Optional: Add space between social icons */
+}
+
+footer .social-icon {
+    font-size: 30px; /* Adjust icon size */
+    color: #1da1f2; /* Twitter blue color */
+}
+
+footer .social-icon:hover {
+    color: #0d95e8; /* Change icon color on hover */
+}
+
+.social-icon {
+    font-size: 10px;          /* Icon size */
+    color: #1da1f2;           /* Twitter blue */
+    text-decoration: none;    /* Remove underline */
+}
+
+.social-icon:hover {
+    color: #0d95e8;           /* Change color on hover */
+}

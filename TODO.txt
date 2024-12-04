@@ -1,0 +1,3 @@
+flexible website, data
+light/dark mode with css and javascript
+scroll-to-top button

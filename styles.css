@@ -11,6 +11,12 @@ h1, h2, h3, h4, h5, h6 {
     padding: 10px;
 }
 
+
+.header {
+    text-align: center;
+    margin: 20px;
+}
+
 .logo {
     font-size: 20px;
     font-weight: bold;
@@ -88,4 +94,23 @@ a.logo {
 
 nav.navmenu{
     color: #681384;
+}
+
+.cur-container {
+    background-color: antiquewhite;
+    padding: 8px;
+}
+
+.cur-container p {
+    margin-left: 100px;
+}
+
+.section-info{
+    margin: auto;
+    width: 700px;
+    padding: 20px;
+}
+
+.section-info p, h3{
+    text-align:center;
 }

@@ -1,21 +1,6 @@
 .center-section{
     text-align: center;
-}
-
-.about-text{
-    margin: auto;
-    width: 700px;
-    padding: 20px;
-}
-
-.cur-container {
-    background-color: antiquewhite;
-    padding: 8px;
-}
-
-.cur-container p {
-    margin-left: 100px;
-}
+}   
 
 
 .about-me {
@@ -23,11 +8,6 @@
     margin: 20px;
     padding: 20px;
 
-}
-
-.about-me .header {
-    text-align: center;
-    margin: 20px;
 }
 
 .about-me .info {
@@ -55,3 +35,81 @@
     align-items: center;
     gap: 20px;
 }
+
+body {
+    font-family: Arial, sans-serif;
+    color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 0;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Creates a responsive grid */
+    gap: 20px; /* Adds space between the skill items */
+    padding: 20px;
+}
+
+@media (min-width: 768px) {
+    .skills-container {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns */
+        grid-template-rows: repeat(2, 1fr); /* 2 rows */
+    }
+}
+
+
+.skill {
+    margin-bottom: 10px;
+}
+
+.skill span {
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.skill-bar {
+    background-color: #333;
+    width: 100%;
+    height: 15px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.skill-fill {
+    height: 100%;
+    width: 0;
+    border-radius: 5px;
+    transition: width 1s ease-in-out;
+}
+
+.html {
+    background-color: #4CAF50;
+    width: 100%; /* Adjust percentage */
+}
+
+.css {
+    background-color: #2196F3;
+    width: 90%;
+}
+
+.js {
+    background-color: #FFC107;
+    width: 75%;
+}
+
+.php {
+    background-color: #FF5722;
+    width: 80%;
+}
+
+.wordpress {
+    background-color: #00BCD4;
+    width: 90%;
+}
+
+.photoshop {
+    background-color: #9C27B0;
+    width: 55%;
+}
+
