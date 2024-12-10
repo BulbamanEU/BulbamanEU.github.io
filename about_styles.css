@@ -113,3 +113,6 @@ body {
     width: 55%;
 }
 
+p, h3, h4, span {
+    color: var(--navmenu-text-color);
+}

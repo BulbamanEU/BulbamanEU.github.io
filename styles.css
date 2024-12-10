@@ -1,16 +1,33 @@
+/* General Styles */
+body {
+    font-family: "Verdana", sans-serif;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color, rgb(255, 255, 255));
+    color: var(--text-color, black);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: "Georgia", serif;
     font-size: 2em;
     font-weight: bold;
 }
 
-.header-container {
-    display: flex; /* Align elements horizontally */
-    justify-content: space-between; /* Creates space between Personal and navmenu */
-    align-items: center; /* Vertically center items */
-    padding: 10px;
+p {
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: normal;
 }
 
+/* Header Styles */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
 
 .header {
     text-align: center;
@@ -22,95 +39,271 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
 }
 
-
-.navmenu a, .navmenu a:focus {
-
-    font-size: 15px;
-    padding: 0 2px;
-
-    font-weight: 400;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    white-space: nowrap;
-    transition: 0.3s;
-    position: relative;
+a.logo {
+    color: #000000;
+    text-decoration: none;
+    font-size: 16px;
+    padding-left: 100px;
+    transition: color 0.3s ease;
 }
 
-/* Styling for the navigation menu */
 .navmenu ul {
     list-style-type: none;
-    display: flex; 
+    display: flex;
     padding: 0;
+    margin: 0;
+    justify-content: center;
 }
 
 .navmenu ul li {
-    margin: 15px; /* Space between nav items */
+    margin: 15px;
+    position: relative;
 }
 
 .navmenu ul li a {
     text-decoration: none;
-    color: #000000;
     font-size: 16px;
-    transform: color 0.3s ease, font-size 0.5s ease;
+    transition: color 0.3s ease, font-size 0.3s ease, transform 0.3s ease;
+    padding-bottom: 5px;
+    display: block;
+    text-align: center;
 }
 
 .navmenu ul li a:hover {
-    color: #00e1ff; /* Change color on hover */
+    color: #00e1ff;
+    transform: scale(1.1);
 }
 
 .navmenu ul li a.active {
-    text-decoration: none;
     color: rgb(7, 170, 48);
     font-size: 18px;
 }
 
-.underline{
-    display: inline-block; /* Ensures proper behavior */
-    border-bottom: 2px solid rgb(0, 209, 56); /* Creates the underline */
-    padding-bottom: 2px; /* Adds space between text and the underline */
-    width: 45%;
+.navmenu ul li a:focus,
+.navmenu ul li a:active {
+    outline: none;
+    border: none;
+    font-size: inherit;
+}
+
+.navmenu ul li a.active::after,
+.navmenu ul li a:hover::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: 2px;
+    background-color: currentColor;
+}
+
+.navmenu ul li a:hover::after {
+    background-color: #00e1ff;
+}
+
+.navmenu ul li a.active::after {
+    background-color: rgb(7, 170, 48);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .navmenu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navmenu ul li {
+        margin: 10px 0;
+    }
+}
+
+/* Section Info */
+.section-info {
+    margin: auto;
+    width: 700px;
+    padding: 20px;
+}
+
+.section-info p, 
+.section-info h3 {
     text-align: center;
-}
-
-p {
-    font-family: "Arial", sans-serif;
-    font-size: 16px;
-    font-weight: normal;
-}
-
-body {
-    font-family: "Verdana", sans-serif;
-    font-size: 14px;
-}
-
-a.logo {
-    color: #000000; /* Mėlyna spalva */
-    text-decoration: none; /* Be pabraukimo */
-    font-size: 16px;
-    transition: color 0.3s ease; /* Sklandus spalvos keitimas */
-    padding-left: 100px;
-}
-
-nav.navmenu{
-    color: #681384;
-}
-
-.cur-container {
-    background-color: antiquewhite;
-    padding: 8px;
 }
 
 .cur-container p {
     margin-left: 100px;
 }
 
-.section-info{
-    margin: auto;
-    width: 700px;
-    padding: 20px;
+/* Back-to-Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s ease, background-color 0.3s ease;
 }
 
-.section-info p, h3{
-    text-align:center;
+.back-to-top:hover {
+    background-color: #0056b3;
 }
+
+/* Light/Dark Theme Toggle */
+.theme-toggle {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #ffffff;
+    border: none;
+    font-size: 24px;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.theme-toggle:hover {
+    background-color: #f0f0f0;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-mode .theme-toggle {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+/* Footer General Styles */
+footer {
+    text-align: center;
+    padding: 20px 30px 100px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+footer .sitename {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin-bottom: 20px;
+}
+
+footer .social-links {
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+}
+
+footer .social-icon {
+    font-size: 30px;
+    color: #009dff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer .social-icon:hover {
+    color: #064c78;
+}
+
+/* Footer Styles for Dark Mode */
+body.dark-mode footer {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-mode footer .social-icon {
+    color: #008cff;
+}
+
+body.dark-mode footer .social-icon:hover {
+    color: #008cff;
+}
+
+
+/* Default (Light Mode) */
+:root {
+    --background-color: white;
+    --text-color: black;
+    --navmenu-background: white;
+    --navmenu-text-color: black;
+    --cur-container-background: white;
+    --cur-container-text-color: black;
+}
+
+/* Dark Mode */
+[data-theme="dark"] {
+    --background-color: black;
+    --text-color: white;
+    --navmenu-text-color: white;
+    --cur-container-background: #444;
+    --cur-container-text-color: white;
+}
+
+/* CSS for MathML */
+math { /* Makes MathML a block element so it behaves like a paragraph */
+    margin: 50px 0; /* Adds some space above and below the formula */
+    padding-left: 0vw; /* Indentation to the left */
+    color: var(--text-color);
+    font-size: 30px; /* Sets the color for the text (formula) */
+}
+
+/* Optional: Style individual MathML elements */
+math mi, math mo, math msup {
+    color:var(--text-color); /* Set a different color for the variables and operators */
+}
+
+.sitename{
+    color: var(--navmenu-text-color);
+}
+
+.navmenu {
+    color: var(--navmenu-text-color);
+}
+
+.navmenu a {
+    color: var(--navmenu-text-color);
+}
+
+.navmenu a:hover {
+    opacity: 0.8;
+}
+
+.cur-container {
+    background-color: var(--cur-container-background);
+    color: var(--cur-container-text-color);
+    padding: 10px;
+    border: 1px solid var(--text-color);
+    border-radius: 5px;
+}
+
+.logo {
+    display: flex;
+    align-items: center; /* Ensures the icon and text are vertically centered */
+}
+
+.sitename {
+    margin-left: 10px; /* Adds a bit of space between the icon and the text */
+}
+
+#clock {
+    font-size: 48px;
+    font-weight: bold;
+    color: #fffdfd;
+    text-align: center;
+}
+

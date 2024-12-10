@@ -1,0 +1,71 @@
+/* Main Section Styling */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: var(--backround-color);
+    padding: 20px;
+}
+
+:root {
+    --pr-container-background: lightblue;
+    --pr-container-text: black;
+
+}
+
+/* Dark Mode */
+[data-theme="dark"] {
+    --pr-container-background: darkblue;
+    --pr-container-text: lightblue;
+
+}
+
+/* Audio Container Styling */
+.pr-container {
+    background-color: var(--pr-container-background);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Audio Container Hover Effect */
+.pr-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Header Styling */
+.pr-container h4 {
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    color: var(--pr-container-text);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Audio Player Styling */
+audio {
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+/* Add a responsive design for small screens */
+@media (max-width: 600px) {
+    .pr-container {
+        padding: 20px;
+        width: 90%;
+    }
+
+    .pr-container h4 {
+        font-size: 20px;
+    }
+}

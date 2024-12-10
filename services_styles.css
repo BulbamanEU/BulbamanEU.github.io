@@ -1,0 +1,48 @@
+.center-wrapper {
+    display: grid;
+    place-items: center; /* Centers the grid both horizontally and vertically */
+    min-height: 50vh;   /* Ensures full viewport height */
+  }
+  
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between blocks */
+    padding: 20px;
+    width: 90%; /* Take more screen width */
+    max-width: 1200px; /* Limit maximum width for larger screens */
+    margin: 0 auto; /* Center the grid on the page */
+  }
+  
+  .block {
+    background-color: #4caf50; /* Green */
+    color: white;
+    text-align: center;
+    padding: 40px 20px; /* Space around content */
+    border-radius: 8px;
+    width: 100%; /* Ensure block fills its grid cell */
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-sizing: border-box; /* Include padding/borders in size */
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    height: 100%; /* Make sure the block has enough height */
+  }
+  
+  .block h5, .block p {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+  }
+  
+  .block:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .block:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
